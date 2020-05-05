@@ -1,0 +1,114 @@
+#include <iostream>
+#include "functions.h"
+using namespace std;
+
+int zerocount = 0;
+int onecount = 0;
+int twocount = 0;
+int threecount = 0;
+int fourcount = 0;
+int fivecount = 0;
+int sixcount = 0;
+int sevencount = 0;
+int eightcount = 0;
+int ninecount = 0;
+int digitplace;
+int valdisplay;
+
+
+int countDigitOccurence(int n, int digit) {
+   
+
+
+	while (n != 0) {
+		
+		digitplace = n % 10; 
+		n = n/10;
+		//cout << "digitplace " << digitplace << endl << endl;
+		//cout << "n: " << n << endl; 
+		
+		if (digitplace == 0) {
+			zerocount += 1;
+		}
+		
+		if (digitplace == 1) {
+			onecount += 1;
+		}
+		
+		if (digitplace == 2) {
+			twocount += 1;
+		}
+		
+		if (digitplace == 3) {
+			threecount += 1;
+		}
+		
+		if (digitplace == 4) {
+			fourcount += 1;
+		}
+		
+		if (digitplace == 5) {
+			fivecount += 1;
+		}
+		
+		if (digitplace == 6) {
+			sixcount += 1;
+		}
+		
+		if (digitplace == 7) {
+			sevencount += 1;
+		}		
+		
+		if (digitplace == 8) {
+			eightcount += 1;
+		}
+		
+		if (digitplace == 9) {
+			ninecount += 1;
+		}
+		
+		
+		
+	}
+	
+	if (digit == 0) {
+		return zerocount;
+	}
+		
+	if (digit == 1) {
+		return onecount;
+	}
+		
+	if (digit == 2) {
+		return twocount;
+	}
+		
+	if (digit == 3) {
+		return threecount;
+	}
+		
+	if (digit == 4) {
+		return fourcount;
+	}
+		
+	if (digit == 5) {
+		return fivecount;
+	}
+		
+	if (digit == 6) {
+		return sixcount;
+	}
+		
+	if (digit == 7) {
+		return sevencount;
+	}		
+		
+	if (digit == 8) {
+		return eightcount;
+	}
+		
+	if (digit == 9) {
+		return ninecount;
+	}
+	
+}
